@@ -29,14 +29,10 @@ class PlaySoundViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAudio();
+        setupAudio()
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func playSoundForButton(_ sender: UIButton){
         print("Play Sond Button Pressed")
@@ -51,7 +47,8 @@ class PlaySoundViewController: UIViewController {
             playSound(echo: true)
         case .reverb:
             playSound(reverb: true)
-        default: playSound()
+        case .vader:
+            playSound(pitch: -1000)
         }
         
         configureUI(.playing)
@@ -64,17 +61,8 @@ class PlaySoundViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         configureUI(.notPlaying)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
