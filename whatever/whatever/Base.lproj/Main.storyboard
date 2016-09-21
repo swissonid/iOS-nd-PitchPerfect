@@ -10,13 +10,13 @@
         <!--Recorder View Controller-->
         <scene sceneID="tV7-Ds-OY1">
             <objects>
-                <viewController id="LSY-Mb-obu" customClass="RecorderViewController" customModule="whatever" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LSY-Mb-obu" customClass="RecorderViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ndi-Ld-Ldm"/>
                         <viewControllerLayoutGuide type="bottom" id="Ctg-Mq-XIx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Qb-Lv-dHT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBB-xf-JmO">
@@ -62,13 +62,13 @@
         <!--Play Sound View Controller-->
         <scene sceneID="dP6-mH-cAh">
             <objects>
-                <viewController id="i9C-dy-bq9" customClass="PlaySoundViewController" customModule="whatever" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="i9C-dy-bq9" customClass="PlaySoundViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HQX-bo-2eZ"/>
                         <viewControllerLayoutGuide type="bottom" id="per-48-fTx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mY1-fR-Z3R">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5aR-kb-ZjF">
