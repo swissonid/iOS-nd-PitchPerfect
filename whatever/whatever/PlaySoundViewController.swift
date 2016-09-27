@@ -29,6 +29,13 @@ class PlaySoundViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setRightContentMode(effectButtons: [snailButton
+            , rabbitButton
+            , chipmunktButton
+            , darthVaderButton
+            , echoButton
+            , reverbButton
+            , stopButton])
         setupAudio()
         // Do any additional setup after loading the view.
     }
@@ -60,15 +67,9 @@ class PlaySoundViewController: UIViewController {
         stopAudio()
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setRightContentMode(effectButtons: [snailButton
-                            , rabbitButton
-                            , chipmunktButton
-                            , darthVaderButton
-                            , echoButton
-                            , reverbButton
-                            , stopButton])
         configureUI(.notPlaying)
     }
     
